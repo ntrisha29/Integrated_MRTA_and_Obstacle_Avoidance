@@ -324,10 +324,8 @@ for k = 1:size(assignments, 1)
     fprintf('  - Calculated Payoff:     %.2f\n', payoff);
 end
 
-fprintf('----------------------------------------------------------\n');
 fprintf('TOTAL FLEET PAYOFF:        %.2f\n', sum(assigned_fois_count)*10 / total_fleet_distance);
 fprintf('TOTAL ASSIGNMENT COST:     %.2f\n', total_fleet_cost);
-fprintf('==========================================================\n');
 hold off;
 
 % --- GENERATE ENGINEERING DASHBOARD ---
@@ -358,15 +356,12 @@ time_taken = (path_distances(d_id) / avg_speed) + ...
     fprintf('  - Estimated Time:    %.1f seconds\n', time_taken);
     fprintf('  - Assignment Cost:   %.2f\n', cost);
 end
-fprintf('-------------------------------------------------\n');
 fprintf('TOTAL MISSION COST:    %.2f\n', total_cost);
-fprintf('=================================================\n\n');
-
 end
 
-%% =========================================================
+%% 
 %% APF HELPER FUNCTIONS
-%% =========================================================
+%% 
 function obstacles = generate_obstacle_field(vertices, faces)
     num_obstacles = 50;
     sample_points = zeros(1500, 3);
