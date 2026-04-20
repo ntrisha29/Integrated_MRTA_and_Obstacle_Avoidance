@@ -12,7 +12,6 @@ hangar_height = 20;
 w_dist = 1.0; 
 w_battery = 1.0;
 
-% --- PRESERVED FROM PRIOR TURN: SLOW FLIGHT PARAMETERS ---
 min_waypoint_spacing = 0.15;       
 
 % APF Collision Avoidance Parameters
